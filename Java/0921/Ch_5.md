@@ -4,7 +4,7 @@
 
 ### if~else와 유사한 성격의 조건 연산자 (피연산자가 세 개인 유일한 연산자)
 * true or false? 숫자1 : 숫자 2
-true 면 숫자1, false 면 숫자 2 
+* true 면 숫자1, false 면 숫자 2 
 
 ### switch 와 break 
 * case, default는 레이블이라 한다.  (case 는 묶을 수 있다. 예) case 1 : case 2 :)
@@ -18,12 +18,6 @@ true 면 숫자1, false 면 숫자 2
 
 ### continue 와 break
 * break 는 while문이나 switch문을 빠져 나가지만, continue 는 생략하고 다시 위로 ( while이나 switch문으로 ) 돌아가서 실행하라는 뜻.
-
-### 무한루프와 break 
-* while (true)		do				for (    ;   ;   )
-{				 {				 {
-	.   .   .   .			.   .   .   .			.   .   .   .
-}				 }				 }
 
 ### 반복문의 중첩
 * 2차원적인 형태를 만들고 싶을 때는 대부분 반복문의 중첩을 사용한다. 
