@@ -1,4 +1,4 @@
-# Cp 5
+# Ch_5
 ### if 와 else
 * if 와 else는 키워드, if~else는 하나의 문장이다( if와 else 사이에 다른 것이 올 수 없다.)
 
