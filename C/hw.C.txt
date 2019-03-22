@@ -1,11 +1,11 @@
-# hw.c
+# hw.C
 <stdio.h>
 <stdlib.h>
 <string.h>
 
-  |=  아이템 추가
-  &   아이템 유무 확인
-  &= ~  아이템 삭제
+ // |=  아이템 추가
+ // &   아이템 유무 확인
+ // &= ~  아이템 삭제
 
   enum {
    CELLDX,
@@ -101,7 +101,7 @@
     int i = 0;
 
     while (current != head) {
-      car **currentcar = (car**)((char**)current - (unsigned long)&(((car**)0)->links));
+      car *currentcar = (car*)((char*)current - (unsigned long)&(((car*)0)->links));
 
     if (CHECK_TYPE(currentcar, kind)) {
         *(kindarr+i) = *currentcar;
@@ -116,7 +116,7 @@
    int count = 0;
 
 while (current != head) {
-     car **currentcar = (car**)((char**)current - (unsigned long)&(((car**)0)->links));
+     car *currentcar = (car*)((char*)current - (unsigned long)&(((car*)0)->links));
 
    if(CHECK_TYPE(currentcar, kind))
      count++;
@@ -132,31 +132,31 @@ while (current != head) {
    if (tok == 1)
    switch (pivot) {
      case 1:
-       return ((car**)a)->retail_price - ((car**)b)->retail_price;
+       return ((car*)a)->retail_price - ((car*)b)->retail_price;
      case 2:
-       return ((car**)a)->dealer_cost - ((car**)b)->dealer_cost;
+       return ((car*)a)->dealer_cost - ((car*)b)->dealer_cost;
      case 3:
-       if (((car**)a)->engine_size > ((car**)b)->engine_size)
+       if (((car*)a)->engine_size > ((car*)b)->engine_size)
          return 1;
        else return -1;
      case 4:
-       return ((car**)a)->weight - ((car**)b)->weight;
+       return ((car*)a)->weight - ((car*)b)->weight;
      case 5:
-       return ((car**)a)->width - ((car**)b)->width;
+       return ((car*)a)->width - ((car*)b)->width;
    }else
      switch (pivot) {
      case 1:
-       return ((car**)b)->retail_price - ((car**)a)->retail_price;
+       return ((car*)b)->retail_price - ((car*)a)->retail_price;
      case 2:
-       return ((car**)b)->dealer_cost - ((car**)a)->dealer_cost;
+       return ((car*)b)->dealer_cost - ((car*)a)->dealer_cost;
      case 3:
-       if (((car**)b)->engine_size > ((car**)a)->engine_size)
+       if (((car*)b)->engine_size > ((car*)a)->engine_size)
          return 1;
        else return -1;
      case 4:
-       return ((car**)b)->weight - ((car**)a)->weight;
+       return ((car*)b)->weight - ((car*)a)->weight;
      case 5:
-       return ((car**)b)->width - ((car**)a)->width;
+       return ((car*)b)->width - ((car*)a)->width;
    }
  }
 
