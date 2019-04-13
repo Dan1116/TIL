@@ -7,21 +7,27 @@
 * 자식은 반드시 기능을 제공해야 하고 부모가 구현을 제공할 필요가 없다면, 추상 메소드가 좋다
 * 리팩토링 (Refactoring) : 기존 코드의 동작을 변경하지 않고 구조를 개선하는 작업 (마틴 파울러) -> 코드의 유지보수성을 떨어트리는 요소 - 냄새 (smells) -> Replace type code with polymorphism
 
-### Boxing
+## Code Smells
+* 새로운 것이 추가될 때마다, 코드는 수정되어야 한다
+* 리팩토링(Refactoring): 마틴 파울러
+* : 코드의 유지보수를 어렵게 만드는 요소 - 냄새(Code Smells)
+
+## Boxing
 * Boxing = Collection 에 Primitive Type 을 저장하기 위해서는 Reference Type으로 변환해야 한다
 * 자동으로 박싱을 하는 것 = Auto Boxing
 * 오토 박싱은 어떤 타입이 들어있는지 빼낼 때 알 수 없으므로 잘 사용하지 않는다
 * Collection 에는 하나의 타입만 집어넣자
 
-### Upcasting 은 암묵적(Implicit)으로 허용
+## Upcasting 은 암묵적(Implicit)으로 허용
 * static binding  : 컴파일러 (타입만 볼 수 있다)가 결정
 * dynamic binding : 실행시간에 결정 (default)
 
-### Private > default > protected > public
+## Private > default > protected > public
 * default = 같은 클래스 내에서는 접근 가능,  같은 패키지 내에서는 protected 에 접근이 가능
 * 패키지의 이름이 같으면 다른 모듈이여도 접근이 가능하다 (단점) 악의적으로 이용이 가능하다
 
 ## StringBuilder 객체의 용도
+* 객체 생성의 공정은 동일하지만, 다른 표현을 가지는 객체를 생성할 때 사용하는 패턴이다
 * 불변 객체는 새로운 표현마다 새로운 객체가 만들어진다
 * 프로그램 성능이 객체의 생성과 파괴에 큰 영향을 받는다
 * String 과 다르게 mutable
@@ -44,7 +50,7 @@
 * 동적배열, 컬랙션 (특정한 부분을 찾는 시간이 빠르다)
 * 런타임에 크기가 계속 변경될 수 있다 (결국 정적배열을 사용해서 구현)
 * 원시적 (primitive) 타입을 넣을 수 없다
-* 초기화시  사이즈를 표시하지 않음, 유동적
+* 초기화시 사이즈를 표시하지 않음, 유동적
 * 추가시 메모리를 재할당, 속도가 느리다
 * 추가 삭제 가능 (add ( ), remove ( ))
 
@@ -54,7 +60,7 @@
 
 ## 래퍼 클래스 (Integer, Long, Double)가 필요한 이유
 * 원시적 타입 (call by value)을 참조형 타입 (call by reference)으로 사용하기 위해서 만들어진 클래스가 래퍼 클래스
-* 원시 데이터 유형은 메모리 주소로 참조 될 수 없습니다. 그렇기 때문에 원시 값의 자리 표시자 역할을 하는 래퍼가 필요합니다. 이 값들은 돌연변이되어 액세스되거나, 재구성되거나, 정렬되거나 무작위화 될 수 있습니다.
+* 원시 데이터 유형은 메모리 주소로 참조 될 수 없습니다. 그렇기 때문에 원시 값의 자리 표시자 역할을 하는 래퍼가 필요합니다. 이 값들은 돌연변이되어 액세스되거나, 재구성되거나, 정렬되거나 무작위화 될 수 있습니다
 
 ## 비교 
 * 객체의 동등성 -> 동일한 내용을 가지는가 (.equals)
@@ -75,7 +81,7 @@
 1. Primitive type (Built-in type) , Scala Type, Value Type =>
 int, double, float, char, boolean, byte
 2. Reference type (User-defined Type) => 모든 클래스 타입 (대문자로 시작)
-Reference 타입으로 만드는 방법 3 가지 -> class, Array, enum
+Reference 타입으로 만드는 방법 3 가지 -> class, Array, enum, interface
 
 ## SOLID = 객체지향 설계 5대 원칙
 * => 정리한 사람 : Uncle Bob ( Robert C martine = clean code)
@@ -88,7 +94,7 @@ Reference 타입으로 만드는 방법 3 가지 -> class, Array, enum
 ### OCP(Open Close Principle)
 : 개방 폐쇄의 원칙
 -> 모듈은 수정에는 닫혀 있고, 확장에는 열려 있어야 한다.
-:새로운 기능이 추가되어도, 기존 코드는 수정되면 안된다.
+: 새로운 기능이 추가되어도, 기존 코드는 수정되면 안된다.
 
 ### LSP(Liskov Substitution Principle)
 : 리스코프의 치환 원칙
@@ -107,8 +113,7 @@ iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 
 ### DIP(Dependency Inversion Principle)
 : 의존관계 역전 원칙
-=> 클라이언트는 구체적인 타입에 의존하는 것이 아니라,
-인터페이스나 추상 클래스에 의존해야 한다.
+=> 클라이언트는 구체적인 타입에 의존하는 것이 아니라, 인터페이스나 추상 클래스에 의존해야 한다.
 
 ## 메모리 영역 (Life cycle, 비용)
 * Text ->  기계어 코드 저장되는 영역 (read-only) -> Segmentation Fault
@@ -128,25 +133,25 @@ iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 * 비교자 : 정렬을 할 때는 정책을 이용해야 한다
 * 오름차순 (ascending), 내림 차순 (descending)
 * Comparator (비교자) -> 내가 만든 객체가 아닐 경우 사용 -> 타입 안전성을 가지고 있다
-* Comparable (비교 가능한) -> 내가 만든 객체일 경우 사용 -> 내가 만들게 아니면 사용할 수 없다, Object 타입이기 때문에 잘못된 타입이 올 수도 있다
+* Comparable (비교 가능한) -> 내가 만든 객체일 경우 사용 -> 내가 만든 객체가 아니면 사용할 수 없다, Object 타입이기 때문에 잘못된 타입이 올 수도 있다
 * 데이터는 Stream 기반으로 처리하는게 좋다
 
 ## ConcurrentModificationException - fail fast
-* => 하나의 컬렉션에 두 개 이상의 스레드가 데이터를 넣거나 뺄때 발생하는 문제입니다.
-* => Race Condition
-* => Mutex
+* 하나의 컬렉션에 두 개 이상의 스레드가 데이터를 넣거나 뺄때 발생하는 문제이다
+* Race Condition
+* Mutex
 
 ## for (Socket socket : sessions)
-* => 향상된 for 구문
-* => 향상된 for 구문을 순회하는 도중에, 절대 컬렉션의 크기가 변경되면 안된다.
+* 향상된 for 구문
+* 향상된 for 구문을 순회하는 도중에, 절대 컬렉션의 크기가 변경되면 안된다.
 
-## 1. 명시적으로 lock을 제공하는 방법
+## 명시적으로 lock을 제공하는 방법
 ### 문제점
 * : 실수 가능성이 높다.
 * 1) lock을 제대로 공유하지 않는 경우
 * 2) synchronized 구문을 제대로 작성하지 않는 경우
  
-## 2. 해결방법 collection이 스스로 동기화 할 수 있도록하자.
+## 해결방법 collection이 스스로 동기화 할 수 있도록하자.
 * : Decorator Pattern
 * => 실행 중에 기존 객체에 새로운 기능을 추가하는 패턴
 
@@ -161,37 +166,33 @@ iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 ## Interface 는 약속이다
 * 자바는 익명의 클래스라는 문법을 제공합니다.
 
-### 람다 (함수형)
+## 람다 (함수형)
 * openButton.setOnClickListener((id) -> {
 * dialog.open();
 * });
 
 ## 상속
 * is-a 관계
-* => 부모의 구현(필드, 메소드)을 물려 받는다.
-* => 부모의 자식 간의 강한 결합이 발생한다.
-* => 강한 결합?
-* : 구체적인 타입에 의존한다.
-* 부모의 참조변수를 통해 자식 객체를 참조할 수 있다.
-* Upcasting은 암묵적으로 허용한다.
+* 부모의 구현(필드, 메소드)을 물려 받는다
+* 부모의 자식 간의 강한 결합이 발생한다
+
+* 강한 결합?
+* : 구체적인 타입에 의존한다
+* 부모의 참조변수를 통해 자식 객체를 참조할 수 있다
+* Upcasting은 암묵적으로 허용한다
 
 ## Binding
 ### 1. Static Binding
-* : 참조 변수의 타입을 통해 함수를 결정한다.
-* => 장점: 런타임 오버헤드가 없다.
-* 단점: 합리적인 동작이 아니다.
+* : 참조 변수의 타입을 통해 함수를 결정한다
+* 장점: 런타임 오버헤드가 없다
+* 단점: 합리적인 동작이 아니다
 * Static (정적) - 컴파일 타임 => 타입
 
 ### 2. Dynamic Binding
-* : 참조 변수가 참조하는 객체의 타입을 런타임에 확인해서 함수를 호출한다.
-* => 장점: 합리적으로 동작한다. => 다형성
-* 단점: 런타임 오버헤드가 있다.
-* 오버헤드 (Overhead)란 어떤 처리를 하기 위해 들어가는 간접적인 처리 시간, 메모리 등을 말한다.
-* 동적 디스패치 (바인딩): 참조 변수가 참조하는 객체 타입의 메소드를 호출한다.
+* : 참조 변수가 참조하는 객체의 타입을 런타임에 확인해서 함수를 호출한다
+* 장점: 합리적으로 동작한다. => 다형성
+* 단점: 런타임 오버헤드가 있다
+* 오버헤드 (Overhead)란 어떤 처리를 하기 위해 들어가는 간접적인 처리 시간, 메모리 등을 말한다
+* 동적 디스패치 (바인딩): 참조 변수가 참조하는 객체 타입의 메소드를 호출한다
 * Dynamic (동적) - 런 타입
-* => Virtual (가상) 을 사용하면 정적을 동적으로 만들 수 있다
-
-## Code Smells
-* => 새로운 것이 추가될 때마다, 코드는 수정되어야 한다.
-* => 리팩토링(Refactoring): 마틴 파울러
-* : 코드의 유지보수를 어렵게 만드는 요소 - 냄새(Code Smells)
+* Virtual (가상) 을 사용하면 정적을 동적으로 만들 수 있다
