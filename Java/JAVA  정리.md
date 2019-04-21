@@ -146,7 +146,15 @@ iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 
 ## ConcurrentModificationException - fail fast
 * 하나의 컬렉션에 두 개 이상의 스레드가 데이터를 넣거나 뺄때 발생하는 문제이다
-* Race Condition
+* Race Condition  => 원자적이 아니여서 발생하는 문제 => 쪼개지지 않는다
+* 경쟁 조건이 발생하지 않도록, 임계 영역에 대해서 상호 배제를 해주어야 한다
+
+* 임계 영역(Critical Section)
+* 상호 배제(Mutual Exclusion) : 하나의 스레드만 접근할 수 있도록 만들어 주는 것
+
+* 경쟁 조건이 발생하였을 때, 정수의 연산만 존재한다면, 뮤텍스보다는 다른 방법을 쓰는 것이 좋다
+* => 원자적 연산(CPU 명령)
+
 * Mutex
 
 ## for (Socket socket : sessions)
@@ -168,6 +176,7 @@ iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 
 ### 랜덤을 사용하기 위한 방법
 * LocalDateTime.now().atZone(ZoneId.systemDefault()).toEpochSecond();
+* Epoch time = 1970년 1월 1일 0시 0분부터 측정한 시간
  
 ### 리스너 기반의 처리 방식보다는 핸들러 기반 (함수 포인터) 이벤트 처리 방식을 사용하라
 
