@@ -224,13 +224,6 @@ iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 * 버퍼링을 하는 이유는 User mode 와 Kernel mode의 문맥 교환(context switching)을 자주 일어나지 않도록 하기 위해서 사용한다 (시스템 콜을 줄이기 위해)
 
 1. 인자의 전달은 stack을 이용한다.
-  => Calling Convention
-   1) cdecl   => caller가 인자 스택을 정리한다.
-    2) stdcall => callee가 인자 스택을 정리한다.
-    3) fastcall
-    —————
-    4) 64bit call
-    => 인자의 전달을 레지스터를 이용해서 전달한다.
 
 2. 함수 호출 이전의 상태와 함수 호출 후의 스택 상태는 동일해야 한다.
 
