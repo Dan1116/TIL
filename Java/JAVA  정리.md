@@ -22,7 +22,7 @@
 
 ## Boxing
 * Boxing = Collection 에 Primitive Type 을 저장하기 위해서는 Reference Type으로 변환해야 한다
-* 자동으로 박싱을 하는 것 = Auto Boxing 이라 부른다
+* 자동으로 박싱을 하는 것 = Auto Boxing 이라 한다
 * 오토 박싱은 어떤 타입이 들어있는지 빼낼 때 알 수 없으므로 잘 사용하지 않는다
 * Collection 에는 하나의 타입만 집어넣어야 한다
 
