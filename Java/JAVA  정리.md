@@ -8,7 +8,6 @@
 * 리팩토링 (Refactoring) : 기존 코드의 동작을 변경하지 않고 구조를 개선하는 작업이다 (마틴 파울러) -> 코드의 유지보수성을 떨어트리는 요소 - 냄새 (smells) -> Replace type code with polymorphism
 * AOP (관점 지향 프로그래밍) = Aspect Oriented Programming, 어노테이션을 사용하는 두 번째 이유 (반복적으로 생기는 보일러플레이트를 제거할 수 있다), 좀 더 선언적으로 표현이 가능하게 만들어 준다
 * Spring Framework 
-
 * 동일한 내용의 객체를 공유할 수 있다 -> Flyweight pattern
 * COW (copy on write )
 * 동일한 내용의 경우 공유할 수 있으므로, 객체를 비교할 때, ==연산을 통해 비교할 수 있다
