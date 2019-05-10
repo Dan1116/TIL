@@ -44,7 +44,7 @@
 
 ##  @Override  (런타임 다형성을 구현하는 기능)
 * 컴파일러에게 특정한 동작을 한다는 것을 알려주는 기능이다 (Annotation)
-* 요즘에는 부모로부터 상속받은 클래스는 앞에 override한다고 명시한다
+* 요즘에는 부모로부터 상속받은 클래스는 앞에 override를 명시한다
 * 런타임에 작동하는 annotation을 만들어야 한다 (build, FunctionalInterface)
 
 ## 정적 배열 Array
@@ -55,10 +55,10 @@
 
 ## 동적 배열 ArrayList
 * 동적배열, 컬랙션 (특정한 부분을 찾는 시간이 빠르다)
-* 런타임에 크기가 계속 변경될 수 있다 (결국 정적배열을 사용해서 구현)
+* 런타임에 크기가 계속 변경될 수 있다 (정적배열을 사용해서 구현해야 한다)
 * 원시적 (primitive) 타입을 넣을 수 없다
 * 초기화시 사이즈를 표시하지 않음, 유동적이다
-* 추가시 메모리를 재할당, 속도가 느리다
+* 추가 시 메모리를 재할당, 속도가 느리다
 * 추가 삭제 가능 (add ( ), remove ( ))
 
 ## 동적 배열 LinkedList
@@ -91,8 +91,8 @@ int, double, float, char, boolean, byte
 Reference 타입으로 만드는 방법 3 가지 -> class, Array, enum, interface
 
 ## SOLID = 객체지향 설계 5대 원칙
-* => 정리한 사람 : Uncle Bob ( Robert C martine = clean code)
-   
+* => 정리한 사람 : Uncle Bob (Robert C Martine = clean code)
+
 ### SRP(Single Responsibility Principle)
 : 단일 책임의 원칙
 -> 모듈(변수, 함수, 클래스, 프로그램)은
