@@ -27,7 +27,7 @@
 
 ## Upcasting 은 암묵적(Implicit)으로 허용한다
 * static binding  : 컴파일러 (타입만 볼 수 있다)가 결정한다
-* dynamic binding : 실행시간에 결정 (default)
+* dynamic binding : 실행시간에 결정한다 (default)
 
 ## Private > package private > protected > public
 * default = 같은 클래스 내에서는 접근 가능,  같은 패키지 내에서는 protected 에 접근이 가능하다
