@@ -7,7 +7,6 @@
 * 자식은 반드시 기능을 제공해야 하고 부모가 구현을 제공할 필요가 없다면, 추상 메소드가 좋다
 * 리팩토링 (Refactoring) : 기존 코드의 동작을 변경하지 않고 구조를 개선하는 작업이다 (마틴 파울러) -> 코드의 유지보수성을 떨어트리는 요소 - 냄새 (smells) -> Replace type code with polymorphism
 * AOP (관점 지향 프로그래밍) = Aspect Oriented Programming, 어노테이션을 사용하는 두 번째 이유 (반복적으로 생기는 보일러플레이트를 제거할 수 있다), 좀 더 선언적으로 표현이 가능하게 만들어 준다
-* Spring Framework 
 * 동일한 내용의 객체를 공유할 수 있다 -> Flyweight pattern
 * COW (copy on write )
 * 동일한 내용의 경우 공유할 수 있으므로, 객체를 비교할 때, ==연산을 통해 비교할 수 있다
@@ -17,7 +16,7 @@
 ## Code Smells
 * 새로운 것이 추가될 때마다, 코드는 수정되어야 한다
 * 리팩토링(Refactoring): 마틴 파울러
-* : 코드의 유지보수를 어렵게 만드는 요소 - 냄새(Code Smells)
+* 코드의 유지보수를 어렵게 만드는 요소 - 냄새(Code Smells)
 
 ## Boxing
 * Boxing = Collection 에 Primitive Type 을 저장하기 위해서는 Reference Type으로 변환해야 한다
