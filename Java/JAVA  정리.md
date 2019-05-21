@@ -12,6 +12,10 @@
 * 동일한 내용의 경우 공유할 수 있으므로, 객체를 비교할 때, ==연산을 통해 비교할 수 있다
 * == : 참조 동등성을 판단한다
 * equals : 객체 동등성을 판단한다
+* interface 는 느슨한 결합,d 객체가 없어도 미리 쓸 수 있게 만들어 준다
+
+* Vector는 무조건 동기화이기 때문에 이제 쓰지 않는다
+* -> 단일 쓰레드 처리에는 ArrayList를 쓰고, 동기화가 필요할 때는 Collection, synchronizedCollection, synchronizedList, Map 을 사용한다
 
 ## Code Smells
 * 새로운 것이 추가될 때마다, 코드는 수정되어야 한다
