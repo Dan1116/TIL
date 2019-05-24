@@ -5,10 +5,10 @@
 * String은 불변 객체 이다 (상태가 변경 되어야 한다면 그 상태를 가지는 새로운 객체를 생성한다)
 * 자식의 공통된 기능은 반드시 부모로부터 비롯되어야 한다 (부모의 레퍼런스를 통해서 자식의 기능을 온전히 이용할 수 있다)
 * 자식은 반드시 기능을 제공해야 하고 부모가 구현을 제공할 필요가 없다면, 추상 메소드가 좋다
-* 리팩토링 (Refactoring) : 기존 코드의 동작을 변경하지 않고 구조를 개선하는 작업이다 (마틴 파울러) -> 코드의 유지보수성을 떨어트리는 요소 - 냄새 (smells) -> Replace type code with polymorphisms
+* 리팩토링 (Refactoring) : 기존 코드의 동작을 변경하지 않고 구조를 개선하는 작업이다 (마틴 파울러) -> 코드의 유지보수성을 떨어트리는 요소 - 냄새 (smells) -> Replace type code with polymorphism
 * AOP (관점 지향 프로그래밍) = Aspect Oriented Programming, 어노테이션을 사용하는 두 번째 이유 (반복적으로 생기는 보일러플레이트를 제거할 수 있다), 좀 더 선언적으로 표현이 가능하게 만들어 준다
 * 동일한 내용의 객체를 공유할 수 있다 -> Flyweight pattern
-* COW (copy on write )
+* COW (copy on write ) = 방어적 복사 
 * 동일한 내용의 경우 공유할 수 있으므로, 객체를 비교할 때, ==연산을 통해 비교할 수 있다
 * == : 참조 동등성을 판단한다
 * equals : 객체 동등성을 판단한다
@@ -18,10 +18,10 @@
 * 오버헤드 (Overhead)란 어떤 처리를 하기 위해 들어가는 간접적인 처리 시간, 메모리 등을 말한다
 
 * FileInputStream, FileOutputStream(바이트스트림) 은 바이트(Byte) 형식의 데이터를 읽고 쓴다
-* FileReader, FileWriter(문자스트림) 은 문자단위(char 배열 or String) 형태의 문자를 읽거나 쓴다
+* FileReader, FileWriter(문자스트림)은 문자단위(char 배열 or String) 형태의 문자를 읽거나 쓴다
 
-* Vector는 무조건 동기화이기 때문에 이제 사용하지 않는다
-* 단일 쓰레드 처리에는 ArrayList를 쓰고, 동기화가 필요할 때는 Collection, synchronizedCollection, synchronizedList, Map 을 사용한다
+* Vector는 무조건 동기화이기 때문에 단일 스레드에서 성능이 떨어지고 멀티 스레드 에서도 이제 사용하지 않는다
+* 단일 스레드 처리에는 ArrayList를 쓰고, 동기화가 필요할 때는 Collection, synchronizedCollection, synchronizedList, Map 을 사용한다
 
 ## Code Smells
 * 새로운 것이 추가될 때마다, 코드는 수정되어야 한다
@@ -34,19 +34,19 @@
 * 오토 박싱은 어떤 타입이 들어있는지 빼낼 때 알 수 없으므로 잘 사용하지 않는다
 * Collection 에는 하나의 타입만 집어넣어야 한다
 
-## Upcasting 은 암묵적(Implicit)으로 허용한다
+## Upcasting은 암묵적(Implicit)으로 허용한다
 * static binding  : 컴파일러 (타입만 볼 수 있다) 가 결정한다
 * dynamic binding : 실행시간에 결정한다 (default)
 
 ## Private > package private > protected > public
-* default = 같은 클래스 내에서는 접근 가능,  같은 패키지 내에서는 protected 에 접근이 가능하다
+* package private = 같은 클래스 내에서는 접근 가능,  같은 패키지 내에서는 protected 에 접근이 가능하다
 * 패키지의 이름이 같으면 다른 모듈이여도 접근이 가능하다 (단점) 악의적으로 이용이 가능하다 (자바에서만 특별하게 default, 따라서 다른 언어에서는 이렇게 작동하지 않는다)
 
 ## StringBuilder 객체의 용도
 * 객체 생성의 공정은 동일하지만, 다른 표현을 가지는 객체를 생성할 때 사용하는 패턴이다
 * 불변 객체는 새로운 표현마다 새로운 객체가 만들어진다
 * 프로그램 성능이 객체의 생성과 파괴에 큰 영향을 받는다
-* String 과 다르게 mutable 이다
+* String 과 다르게 불변 객체가 아니다
 * 문자열 연산이 자주 있을 때 사용한다
 * Builder은 단일 쓰레드 환경에서 사용하기 좋다
 * Buffer는 멀티 쓰레드 환경에서 사용하기 좋으며 동기화를 지원, =을 쓸 이유가 없다
@@ -68,7 +68,7 @@
 * 원시적 (primitive) 타입을 넣을 수 없다
 * 초기화시 사이즈를 표시하지 않음, 유동적이다
 * 추가 시 메모리를 재할당, 속도가 느리다
-* 추가 삭제 가능 (add ( ), remove ( ))
+* 추가 삭제 기능 (add ( ), remove ( ))
 
 ## 동적 배열 LinkedList
 * 동적배열, 컬랙션 (특정한 부분을 삽입 삭제 하는 시간이 빠르다)
@@ -105,18 +105,18 @@ Reference 타입으로 만드는 방법 3 가지 -> class, Array, enum, interfac
 ### SRP(Single Responsibility Principle)
 : 단일 책임의 원칙
 -> 모듈(변수, 함수, 클래스, 프로그램)은
-단 하나의 책임을 가져야 한다.
+단 하나의 책임을 가져야 한다
 
 ### OCP(Open Close Principle)
 : 개방 폐쇄의 원칙
--> 모듈은 수정에는 닫혀 있고, 확장에는 열려 있어야 한다.
-: 새로운 기능이 추가되어도, 기존 코드는 수정되면 안된다.
+-> 모듈은 수정에는 닫혀 있고, 확장에는 열려 있어야 한다
+: 새로운 기능이 추가되어도, 기존 코드는 수정되면 안된다
 
 ### LSP(Liskov Substitution Principle)
 : 리스코프의 치환 원칙
--> 자식은 부모 클래스로 대체할 수 있어야 한다.
-: 자식의 공통된 기능은 부모로부터 비롯되어야 한다.
-=> 상속의 목적은 다형성이다.
+-> 자식은 부모 클래스로 대체할 수 있어야 한다
+: 자식의 공통된 기능은 부모로부터 비롯되어야 한다
+=> 상속의 목적은 다형성이다
 
 ### ISP(Interface Segregation Principle)
 : 인터페이스 분리 원칙
@@ -125,11 +125,11 @@ MP3: play() / playOneMinute()
 iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 }
 
-: 범용 인터페이스(어떤 입출력 기기에도 적합하도록 구상된 인터페이스) 보다는 세분화된 인터페이스가 좋다.
+: 범용 인터페이스(어떤 입출력 기기에도 적합하도록 구상된 인터페이스) 보다는 세분화된 인터페이스가 좋다
 
 ### DIP(Dependency Inversion Principle)
 : 의존관계 역전 원칙
-=> 클라이언트는 구체적인 타입에 의존하는 것이 아니라, 인터페이스나 추상 클래스에 의존해야 한다.
+=> 클라이언트는 구체적인 타입에 의존하는 것이 아니라, 인터페이스나 추상 클래스에 의존해야 한다 (느슨한 결합)
 
 ## 메모리 영역 (Life cycle, 비용)
 * Text ->  기계어 코드 저장되는 영역 (read-only) -> Segmentation Fault
@@ -154,10 +154,10 @@ iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 
 ## ConcurrentModificationException - fail fast
 * 하나의 컬렉션에 두 개 이상의 스레드가 데이터를 넣거나 뺄때 발생하는 문제이다
-* Race Condition  => 원자적이 아니여서 발생하는 문제이다 => 쪼개지지 않는다
+* Race Condition  => 원자적(더 이상 나누어 질 수 없는 하나)이 아니여서 발생하는 문제이다 => 쪼개지지 않는다
 * 경쟁 조건이 발생하지 않도록, 임계 영역에 대해서 상호 배제를 해주어야 한다
 
-* 임계 영역(Critical Section)
+* 임계 영역(Critical Section) : 임계구역(critical section) 또는 공유변수 영역은 병렬컴퓨팅에서 둘 이상의 스레드가 동시에 접근해서는 안되는 공유 자원(자료 구조 또는 장치)을 접근하는 코드의 일부를 말한다.임계 구역은 지정된 시간이 지난 후 종료된다.
 * 상호 배제(Mutual Exclusion) : 하나의 스레드만 접근할 수 있도록 만들어 주는 것
 
 * 경쟁 조건이 발생하였을 때, 정수의 연산만 존재한다면, 뮤텍스보다는 다른 방법을 쓰는 것이 좋다
@@ -189,7 +189,8 @@ iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 ### 리스너 기반의 처리 방식보다는 핸들러 기반 (함수 포인터) 이벤트 처리 방식을 사용하는 것이 좋다
 
 ## Interface 는 약속이다
-* 자바는 익명의 클래스라는 문법을 제공합니다.
+* 자바는 익명의 클래스라는 문법을 제공합니다
+* 느슨한 결합을 해야할 때 사용한다
 
 ## 람다 (함수형)
 * openButton.setOnClickListener((id) -> {
@@ -200,20 +201,20 @@ iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 * is-a 관계
 * 부모의 구현(필드, 메소드)을 물려 받는다
 * 부모의 자식 간의 강한 결합이 발생한다
-
-* 강한 결합
-* 구체적인 타입에 의존한다
-* 부모의 참조변수를 통해 자식 객체를 참조할 수 있다
 * Upcasting은 암묵적으로 허용한다
 
+### 강한 결합
+* 구체적인 타입에 의존한다
+* 부모의 참조변수를 통해 자식 객체를 참조할 수 있다
+
 ## Binding
-### 1. Static Binding
+### Static Binding
 * 참조 변수의 타입을 통해 함수를 결정한다
 * 장점: 런타임 오버헤드가 없다
 * 단점: 합리적인 동작이 아니다
 * Static (정적) - 컴파일 타임 => 타입
 
-### 2. Dynamic Binding
+### Dynamic Binding
 * 참조 변수가 참조하는 객체의 타입을 런타임에 확인해서 함수를 호출한다
 * 장점: 합리적으로 동작한다 => 다형성
 * 단점: 런타임 오버헤드가 있다
@@ -244,7 +245,7 @@ iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 
 ## multi thread
 * 메모리 공유로 인한 시스템 자원 소모가 줄어 든다
-* 동시에 두가지 이상의 활동을 하는 것이 가능하다
+* 동시에 두 가지 이상의 활동을 하는 것이 가능하다
 * 서로 자원을 소모하다가 충돌이 일어날 가능성이 있다
 * 코딩이 난해해져 버그 발생 확률이 높아진다
 
