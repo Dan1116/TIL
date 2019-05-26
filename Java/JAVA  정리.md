@@ -255,12 +255,12 @@ iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 
 ### Running
 * CPU를 점유하여 실행하고 있는 상태이며 run() 메서드는 JVM만이 호출 가능하다
-* Runnable (준비상태)에 있는 여러 스레드 중 우선 순위를 가진 스레드가 결정되면 JVM이 자동으로 run( ) 메소드를 호출하여 스레드가 Running 상태로 진입한다
+* Runnable (준비상태)에 있는 여러 스레드 중 우선 순위를 가진 스레드가 결정되면 JVM이 자동으로 run() 메소드를 호출하여 스레드가 Running 상태로 진입한다
 
 ### Dead
 * Running 상태에서 스레드가 모두 실행되고 난 후 완료 상태이다, 즉, Done 상태인 것
 
 ### Blocked (지연 상태)
 * CPU 점유권을 상실한 상태, 후에 특정 메서드를 실행시켜 Runnable (준비 상태)로 전환한다
-* wait ( ) 메소드에 의해 Blocked 상태가 된 스레드는 notify ( ) 메소드가 호출되면 Runnable 상태로 간다
+* wait () 메소드에 의해 Blocked 상태가 된 스레드는 notify () 메소드가 호출되면 Runnable 상태로 간다
 * sleep (시간) 메소드에 의해 Blocked 상태가 된 스레드는 지정된 시간이 지나면 Runnable 상태로 간다
