@@ -1,5 +1,6 @@
 # JAVA  정리
 ## 기본 내용
+* 덕 타이핑 
 * DRY = Do not repeat yourself
 * 자바는 class를 통해서 인스턴스를 생성한다
 * 업케스팅 후 재정의 된 메소드를 호출해야 한다
