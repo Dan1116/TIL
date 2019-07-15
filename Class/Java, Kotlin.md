@@ -89,7 +89,7 @@
 * field 를 사용하려면 초기화 부분을 신경 써야 한다
 * 캐스팅 할 때는 as 키워드를 사용해야 한다
 * 코틀린은 중첩 클래스가 기본이다
-* inner 클래스를 만들기 위해서는 inner 키워드가 필수이다
+* inner 클래스를 만들기 위해서는 inner 키워드를 반드시 사용해야 한다
 * Nested Class : static class Memento : Inner Class 보다는 Nested Class를 만들어야 한다
 * Inner Class : class Memento : 외부 클래스의 모든 필드와 메소드에 접근할 수 있다, 외부 클래스(외부 객체)의 참조가 암묵적으로 존재한다
 * when 은 자바의 switch 를 대체한다
