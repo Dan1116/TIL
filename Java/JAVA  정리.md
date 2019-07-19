@@ -19,7 +19,6 @@
 * protected 를 사용하면 안 되는 이유 -> 재사용이 불가능하다
 * 오버헤드 (Overhead)란 어떤 처리를 하기 위해 들어가는 간접적인 처리 시간, 메모리 등을 말한다
 * 상태에 따라 다르게 만들려면 enum 을 사용해야 한다
-
 * FileInputStream, FileOutputStream(바이트스트림) 은 바이트(Byte) 형식의 데이터를 읽고 쓴다
 * FileReader, FileWriter(문자스트림)은 문자단위(char 배열 or String) 형태의 문자를 읽거나 쓴다
 
