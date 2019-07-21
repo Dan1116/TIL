@@ -21,7 +21,6 @@
 * 상태에 따라 다르게 만들려면 enum 을 사용해야 한다
 * FileInputStream, FileOutputStream(바이트스트림) 은 바이트(Byte) 형식의 데이터를 읽고 쓴다
 * FileReader, FileWriter(문자스트림)은 문자단위(char 배열 or String) 형태의 문자를 읽거나 쓴다
-
 * Vector는 무조건 동기화이기 때문에 단일 스레드에서 성능이 떨어지고 멀티 스레드에서도 이제 사용하지 않는다
 * 단일 스레드 처리에는 ArrayList를 쓰고, 동기화가 필요할 때는 Collection, synchronizedCollection, synchronizedList, Map 을 사용한다
 
