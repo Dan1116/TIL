@@ -18,7 +18,6 @@
 * layout_constraintEnd_toStartOf
 * layout_constraintEnd_toEndOf
 
-
 ## Margins (여백)
 * 만약 여백을 주고 싶다면 margin을 이용하면 된다
 * 여백에 들어가는 값은 오직 0 또는 양수값만 적용할 수 있다
@@ -73,7 +72,6 @@
 ## Chains (뷰끼리 연결)
 * chain은 뷰간의 상호 참조 연결을 할때 어떤 방식으로 연결시켜 표현할지 결정한다
 * 수평기준 가장 왼쪽에 있는 View 또는 수직 기준으로 가장 상단에 있는 View가 Head(기준)가 된다
-
 
 ![](Android-ConstraintLayout/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-07-25%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.09.00.png)
 
