@@ -13,7 +13,7 @@ app:layout_constraintVertical_bias=“0.5”
 ```
 
 * ConstraintLayout은 뷰의 위치를 다른 뷰에 상대적으로 지정하게 된다
-* 좌우, 상하로 Constraint 를 정의하면 가운데로 정렬된다
+* 좌우상하로 Constraint 를 정의하면 가운데로 정렬된다
 * bias를 통해서 정렬되는 위치를 정할 수 있다
 
 ### 원형 배치
