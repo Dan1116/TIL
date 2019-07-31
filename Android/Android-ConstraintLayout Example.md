@@ -16,7 +16,12 @@ app:layout_constraintVertical_bias=“0.5”
 * 좌우상하로 Constraint 를 정의하면 가운데로 정렬된다
 * bias를 통해서 정렬되는 위치를 정할 수 있다
 
-### 원형 배치
+## Centering positioning (중앙 배치)
+*  layout_constraintLeft_toLeftOf,  layout_constraintRight_toRightOf 를 둘다 parent 로 설정하면 View가 중앙정렬이 된다
+
+* bias 라는 속성으로 이미 정렬된 View를 한쪽으로 치우치게 만들 수도 있다
+
+## 원형 배치
 ![](Android-ConstraintLayout%20Example/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-07-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%202.53.50.png)
 
 
@@ -71,8 +76,17 @@ app:layout_constrainedHeight=”true|false”
 ## Chains
 *  두개의 뷰가 서로 연결되어 있을 경우 Chain이 생성된다
 * 여러 뷰끼리 묶어서 처리하고 싶을 때 유용하다
+
+* chain은 뷰간의 상호 참조 연결을 할때 어떤 방식으로 연결시켜 표현할지 결정한다
+* 수평기준 가장 왼쪽에 있는 View 또는 수직 기준으로 가장 상단에 있는 View가 Head(기준)가 된다
+
+![](Android-ConstraintLayout%20Example/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-07-25%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.09.00.png)
+
 ![](Android-ConstraintLayout%20Example/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-07-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.23.32.png)
 
+## Margins (여백)
+* 만약 여백을 주고 싶다면 margin을 이용하면 된다
+* 여백에 들어가는 값은 오직 0 또는 양수값만 적용할 수 있다
 
 ## Barrier
 ![](Android-ConstraintLayout%20Example/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-07-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.42.53.png)
@@ -84,5 +98,9 @@ app:layout_constrainedHeight=”true|false”
   app:barrierDirection="end"
   app:barrierMargin="16dp"
   app:constraint_referenced_ids="button1,button2"/>
-
 ```
+
+## Guideline
+![](Android-ConstraintLayout%20Example/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-07-31%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%202.22.13.png)
+
+* 가이드라인을 사용하면 화면을 그릴 때 더 편안하게 만들 수 있다
