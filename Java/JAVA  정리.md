@@ -164,7 +164,7 @@ iPhone: play()           void playMusic(MP3 mp3) { mp3.play(); }
 * 경쟁 조건이 발생하였을 때, 정수의 연산만 존재한다면, 뮤텍스보다는 다른 방법을 쓰는 것이 좋다
 * => 원자적 연산(CPU 명령)
 
-* Mutex : 공유 자원에 대해 단 하나의 스레드만 접근하도록 한다
+* Mutex : 공유 자원에 대해 단 하나의 스레드만 접근하도록 하는 기능
 
 ## for (Socket socket : sessions)
 * 향상된 for 구문
