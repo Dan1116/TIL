@@ -8,9 +8,9 @@
 * rxjava 는 옵저버 패턴을 베이스로 하고 있다, 즉 옵저버가 발행 (emit)을 하면 어떠한 데이터의 흐름 (stream)이 만들어지고 리시버가 구독(consume)하는 형태이다
 * 이 때 데이터를 발행하는 것은 관찰 대상자, 즉 Observable 이다
 
-* 1. onNext : 새로운 데이터를 전달한다
-* 2. onCompleted: 스트림의 종료
-* 3. onError : 에러 신호를 전달한다
+1. onNext : 새로운 데이터를 전달한다
+2. onCompleted: 스트림의 종료
+3. onError : 에러 신호를 전달한다
 
 * rxjava에서 데이터를 구독하는 것은 Observer, 데이터의 흐름 (stream) 속에서 데이터를 건져서 소비한다는 느낌이다
 * 즉 Observer가 subscribe를 시작하면 onNext 의 반복으로 n개의 데이터를 받다가, onCompleted이나 onError를 만나면 한 stream이 일단락 되었다고 생각하면 된다
@@ -18,4 +18,3 @@
 * Observable 을 더 이상 구독하고 있을 필요가 없다면, unsubscribe나 dispose 를 해주어야 한다
 * unsubscribe는 구독을 중지하는 것이고 dispose 는 아예 더 이상 구독을 하지 않도록 처분하는 것이다
 * dispose 는 안드로이드 기준에서 onDestroy 처럼 정말로 구독할 필요가 없는 시점에 해야 한다
-* 
