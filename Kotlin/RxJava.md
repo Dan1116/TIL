@@ -9,7 +9,7 @@
 * 이 때 데이터를 발행하는 것은 관찰 대상자, 즉 Observable 이다
 
 1. onNext : 새로운 데이터를 전달한다
-2. onCompleted: 스트림의 종료
+2. onCompleted: 스트림의 종료한다
 3. onError : 에러 신호를 전달한다
 
 * rxjava에서 데이터를 구독하는 것은 Observer, 데이터의 흐름 (stream) 속에서 데이터를 건져서 소비한다는 느낌이다
