@@ -13,7 +13,7 @@
 3. onError : 에러 신호를 전달한다
 
 * Rxjava에서 데이터를 구독하는 것은 Observer, 데이터의 흐름 (stream) 속에서 데이터를 건져서 소비한다는 느낌이다
-* 즉 Observer가 subscribe를 시작하면 onNext 의 반복으로 n개의 데이터를 받다가, onCompleted이나 onError를 만나면 한 stream이 일단락 되었다고 생각하면 된다
+* Observer가 subscribe를 시작하면 onNext 의 반복으로 n개의 데이터를 받다가, onCompleted이나 onError를 만나면 한 stream이 일단락 되었다고 생각하면 된다
 * 이 때 받은 데이터를 가지고 UI에 표시를 하든 새로운 데이터를 만들어서 다시 서버에 전송을 하든 안 하든 이건 개발자의 자유이다
 * Observable 을 더 이상 구독하고 있을 필요가 없다면, unsubscribe나 dispose 를 해주어야 한다
 * unsubscribe는 구독을 중지하는 것이고 dispose 는 아예 더 이상 구독을 하지 않도록 처분하는 것이다
