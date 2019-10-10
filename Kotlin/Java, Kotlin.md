@@ -18,10 +18,6 @@
 * 대부분의 코드는 call by value 로 변경해야 한다
 * detach : 사용하지 않으면 누수가 발생할 수 있다
 * 스레드가 관여하는 것들은 mutex 를 꼭 사용해야한다
-* DTO : Data Transfer Object
-* DO : Data Object
-* VO : Value Object
-* DAO : Database Access Object
 
 * 데이터를 교환하거나 저장하기 위한 목적의 클래스
 * OR Mapping : Object R, elational - DAO
