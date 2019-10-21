@@ -88,7 +88,7 @@
 * 코틀린은 중첩 클래스가 기본이다
 * inner 클래스를 만들기 위해서는 inner 키워드를 반드시 사용해야 한다 
 * Nested Class : static class Memento : Inner Class 보다는 Nested Class를 만들어야 한다
-* Inner Class : class Memento : 외부 클래스의 모든 필드와 메소드에 접근할 수 있다, 외부 클래스(외부 객체)의 참조가 암묵적으로 존재한다
+* Inner Class : class Memento : 외부 클래스의 모든 필드와 메소드에 접근할 수 있고, 외부 클래스(외부 객체)의 참조가 암묵적으로 존재한다
 * when 은 자바의 switch 를 대체한다
 * 봉인된 클래스 : 라이브러리 설계자 이외에 상속을 사용할 수 없도록 하고 싶을 때 사용한다
 * sealed : 봉인된 클래스, 같은 파일에서만 상속을 허용한다, 소프트 키워드(혼자서 사용할 수 없는 키워드)
