@@ -8,4 +8,7 @@
 * CFM에서 관리되는 손자 프레그먼트라면, getFragmentManager()는 부모(액티비티의 자식) 프레그먼트의 getChildFragmentManager()와 동일한 객체를 반환한다
 * getFragmentManager() 와 getChildFragmentManager() 두 개를 유지하는 이유는 remove() 메소드를 통해 프레그먼트를 제거할 때 유용하기 때문이다
 
+# RxKotlin SAM(Single Abstract Methods) Ambiguity
+* SAM은 추상 메서드에 대해서 lambda 식을 제공한다
+* Java에서 작성한 Interface 정의와 이를 활용하는 etOnClickListener 를 Kotlin 에서 부르는 경우에만 이에 해당한다
 
