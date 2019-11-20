@@ -11,9 +11,9 @@
 *  XML내의 뷰 hierarchy 가 복잡하거나 UI스레드에서 inflate 하는데 시간이 너무 오래걸린다면 사용 할 수 있다
 
 ## 비동기로 뷰를 생성할 때 주의 할 점
-1. parent의 generateLayoutParam()이 thread safe해야 한다
-2. 생성자에서 Handler## 를 만들거나 Looper.myLooper()## 를 사용하면 안된다
-3. LayoutInflater.Factory 를 사용 할 수 없다
-4. Fragment 를 inflate 할 수 없다
+* parent의 generateLayoutParam()이 thread safe해야 한다
+* 생성자에서 Handler## 를 만들거나 Looper.myLooper()## 를 사용하면 안된다
+* LayoutInflater.Factory 를 사용 할 수 없다
+* Fragment 를 inflate 할 수 없다
 
 
