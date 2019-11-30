@@ -40,7 +40,7 @@
 * dynamic binding : 실행시간에 결정한다 (default)
 
 ## private > package private > protected > public
-* package private : 같은 클래스 내에서는 접근 가능,  같은 패키지 내에서는 protected 에 접근이 가능하다
+* package private : 같은 클래스 내에서 접근 가능하고,  같은 패키지 내에서 protected 에 접근이 가능하다
 * 패키지의 이름이 같으면 다른 모듈이여도 접근이 가능해서 악의적으로 이용이 가능하다 (자바에서만 특별하게 default, 따라서 다른 언어에서는 이렇게 작동하지 않는다)
 
 ## StringBuilder 객체의 용도
