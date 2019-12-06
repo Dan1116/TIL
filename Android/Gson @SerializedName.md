@@ -54,3 +54,6 @@
 ## lateinit 디컴파일
 * 디컴파일한 코드를 통해 lateinit 이 어떤 식으로 동작하는지 확인이 가능하다
 * 초기화를 하지 않으면 해당 메소드에 접근이 불가능하다
+
+#  GravitySnapHelper
+* https://github.com/rubensousa/GravitySnapHelper
