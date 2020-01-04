@@ -23,7 +23,7 @@
 * ⌘ Del : 한 줄 삭제
 * ⌘⇧] : 에디터 탭 기준 오른쪽으로 이동
 * ⌘⇧[ : 에디터 탭 기준 왼쪽으로 이동
-* ⌥↑ : 커서 기준으로 단위 영역(단어, 영역, 문장, 메서드 등) 선택 - **강추**
+* ⌥↑ : 커서 기준으로 단위 영역(단어, 영역, 문장, 메서드 등) 선택 - 강추
 * ⌘ F12 : 현재 클래스 필드, 메서드 등 목록 노출 - lombok 사용할 시 편함
 * ⌘N : 각종 코드 생성 (getter, setter, override, DI 등)
 * ⌃O : 상위클래스 override
@@ -48,7 +48,7 @@ I
 
 ### 이동
 * ⌘B : 클라이언트 코드에서 해당 메소드 선언으로 이동
-* ⌘⌥B : 클라이언트 코드에서 해당 메소드 구현으로 이동 - **강추**
+* ⌘⌥B : 클라이언트 코드에서 해당 메소드 구현으로 이동 - 강추
 * ⌘U : 구상클래스에서 해당 메소드 선언으로 이동
 * ⌘⌥←, ⌘⌥→ : 이전, 다음 작업영역으로 이동
 
@@ -84,4 +84,3 @@ I
 * ⌘N : Code | Generate, getter, setter
 * ⌥F1 : select the currently edited element (class, file, method or field)
 * ⌥⌘T : Code | Surround With, choose try / catch
-* ⌥⌘B : 
