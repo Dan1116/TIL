@@ -1,5 +1,5 @@
 # GitHub
-* 처음 컴퓨터를 사용할 때에는 git cofig user.name “username” 과 git config user.email “email”을 해줘야한다
+* 컴퓨터에서 깃을 처음 사용할 때에는 git cofig user.name “username” 과 git config user.email “email”을 해줘야 잔디가 심어진다 
 * Commit 한 옛 버전을 클론 뜨는 방법 : git reset —hard 커밋해시
 * revert : revert는 상태를 되돌린다고 볼 수 있다
 
