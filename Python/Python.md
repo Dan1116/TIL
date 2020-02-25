@@ -40,4 +40,10 @@
 * many python modules define new classes
 * each class has a separate environment 
 * inheritance allows subclasses to redefine or extend a selected subset of a superclass behavior
-* 
+
+# The power of OOP
+* bundle together objects that share
+* common attributes and procedures that operate not hose attributes
+* use abstraction to make a distinction between how to implement an object vs how to use the object
+* build layers of object abstractions that inherit behaviors from other classes of objects
+* create our own classes of objects on top of python’s basic classes
