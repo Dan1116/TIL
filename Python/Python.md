@@ -3,9 +3,9 @@
 * Declarative 
 * Imperative
 * type checking 
-* statement = legal commands that python can interpret ( print, assignment)
+* statement : legal commands that python can interpret ( print, assignment)
 * branching programs - something that can change order or instruction base on some test, test is usually value of variable 
-*  flow chart
+* flow chart
 * float = floating point 
 * 1 <= mantissa < 2
 * mantissa exponent  -> -1022 : 1023
