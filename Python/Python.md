@@ -47,3 +47,41 @@
 * use abstraction to make a distinction between how to implement an object vs how to use the object
 * build layers of object abstractions that inherit behaviors from other classes of objects
 * create our own classes of objects on top of python’s basic classes
+
+# Class of objects
+* class name is the type
+* class defines data and methods common across all instances
+
+# Instance of a Class
+* instance is one specific object
+* instance has the structure of the class
+
+# OOP and classes of objects
+* group different objects part of the same type
+
+# Getter and Setter Methods
+* getters and setters should be used outside of class to access data attributes
+
+# An instance and dot notation
+* instantiation creates an instance of an object
+* dot notation used to access attributes though it is better to use getters and setters to access data arrtibutes
+
+# Information hiding
+* If you are accessing data attributes outside the class and class definition change may get errors
+
+# Python not great at information hiding
+* allows you to access data from outside class definition
+* allows you to write to data from outside class definition
+* allows you to create data attributes for an instance from outside class definition
+
+# Subclass, Superclass
+* subclass can have methods with same name as superclass
+* for an instance of a class, look for a method name in current class definition
+
+# Object Oriented Programming
+* create your own collections of data
+* organize information
+* division of work
+* access information in a consistent manner
+* add layers of complexity
+* like functions, classes are a mechanism for decomposition and abstraction in programming
