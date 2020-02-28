@@ -3,7 +3,7 @@
 * Declarative 
 * Imperative
 * type checking 
-* statement : legal commands that python can interpret ( print, assignment)
+* statement : legal commands that python can interpret (print, assignment)
 * branching programs - something that can change order or instruction base on some test, test is usually value of variable 
 * flow chart
 * float = floating point 
@@ -43,7 +43,7 @@
 
 # The power of OOP
 * bundle together objects that share
-* common attributes and procedures that operate not hose attributes
+* common attributes and procedures that operate on those attributes
 * use abstraction to make a distinction between how to implement an object vs how to use the object
 * build layers of object abstractions that inherit behaviors from other classes of objects
 * create our own classes of objects on top of python’s basic classes
@@ -69,7 +69,7 @@
 # Information hiding
 * If you are accessing data attributes outside the class and class definition change may get errors
 
-# Python not great at information hiding
+# Python is not good at information hiding
 * allows you to access data from outside class definition
 * allows you to write to data from outside class definition
 * allows you to create data attributes for an instance from outside class definition
@@ -85,3 +85,8 @@
 * access information in a consistent manner
 * add layers of complexity
 * like functions, classes are a mechanism for decomposition and abstraction in programming
+
+# How to evaluate efficiency of programs
+* measure with a timer
+* count the operations
+* abstract notion of order of growth
