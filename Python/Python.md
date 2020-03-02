@@ -90,3 +90,30 @@
 * measure with a timer
 * count the operations
 * abstract notion of order of growth
+
+# Log-linear complexity
+* many practical algorithms are log-linear
+* very commonly used log-linear algorithm is merge sort
+
+# Polynomial complexity
+* most common polynomial algorithms are quadratic
+* commonly occurs when we have nested loops or recursive function calls
+
+# Exponential complexity
+* recursive functions where more than one recursive call for each size of problem
+* many important problems are inherently exponential
+*  unfortunate, as cost can be high
+* will lead us to consider approximate solutions as may provide reasonable answer more quickly
+
+# Searching algorithms
+### linger search
+* brute force (무식한 방법) search
+* list does not have to be sorted
+* very simple and easy to program
+* list is large, it may take a while to go through the list
+* 
+
+### bisection search
+* list must be sorted to give correct answer
+* saw two different implementations of the algorithm
+* 
