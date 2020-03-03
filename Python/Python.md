@@ -105,15 +105,53 @@
 *  unfortunate, as cost can be high
 * will lead us to consider approximate solutions as may provide reasonable answer more quickly
 
-# Searching algorithms
+# Searching Algorithm
 ### linger search
 * brute force (무식한 방법) search
 * list does not have to be sorted
 * very simple and easy to program
 * list is large, it may take a while to go through the list
-* 
+* using linear search, search for an element is O(n)
 
 ### bisection search
 * list must be sorted to give correct answer
 * saw two different implementations of the algorithm
-* 
+* using binary search, can search for an element in O(log n)
+
+# Sort Algorithm
+* want to efficiently sort a list of entries (typically numbers)
+* will see a range of methods, including one that is quite efficient
+
+## Bubble Sort
+* compare consecutive pairs of elements
+* swap elements in pain such that smaller is first
+* when reach end of list, start over again
+* stop when no more swaps have been made
+* largest unsorted element always at end after pass, so at most n passes
+
+## Selection Sort
+1. first step
+	* extract minimum element
+	* swap it with element at index 0
+2. subsequent step
+	* in remaining sublist, extract minimum element
+	* swap it with the element at index 1
+3. keep the left portion of the list sorted
+	* at i’th step, first i elements in list are sorted
+	* all other elements are bigger than first i elements
+
+# Analyzing Selection Sort
+* loop invariant 
+	1. base case: prefix empty, suffix whole list - invariant true
+	2. induction step : move minimum element from suffix to end of prefix. Since invariant true before move, prefix sorted after append
+	3. when exit, prefix is entire list, suffix empty, so sorted
+
+# Merge Sort
+* use a divide - and - conquer approach
+	1. if list of length 0 or 1, already sorted
+	2. if list has more than one element, split into two lists, and sort each
+	3. merge sorted sublists
+		* look at first element of each, move smaller to end of the result
+		* when one list empty, just copy rest of other list
+	
+
