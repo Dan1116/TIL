@@ -9,7 +9,7 @@
 * float = floating point 
 * 1 <= mantissa < 2
 * mantissa exponent  -> -1022 : 1023
-* 일등 시민 함수, 모든 것이 객체다
+* 파이썬의 함수는 일등 시민 함수, 모든 것이 객체다
 * 함수는 불변
 * 파이썬에는 getter나 setter 메서드가 필요 없다
 
@@ -207,8 +207,6 @@
 * 캐싱 : 변하지 않는 원격 콘텐츠는 웹 클라이언트에 저장하고, 다시 서버로부터 이 콘텐츠의 다운로드를 피하기 위해 저장된 콘텐츠를 사용한다
 * 세션 : 쇼핑 웹사이트는 쇼핑 카트의 콘텐츠를 기억해야 한다
 * 무상태에 대한 해결책 중 쿠키가 있다, 서버가 클라이언트를 식별할 수 있도록 보내는 특정 정보를 쿠키라고 한다
-* 
-
 
 # Advantages of OOP
 * bundle data into packages together with procedures that work on them through work on them through well defined interfaces
