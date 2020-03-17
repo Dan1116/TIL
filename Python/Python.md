@@ -285,6 +285,11 @@
 	* 메시지가 아닌 바이트 스트림을 전송한다, 시스템의 각 송수신 호출에서 얼마나 많은 바이트가 전달되는지 알 수 없다
 	* 전체 메시지를 전달하기 위해 세그먼트로부터 전체 메시지를 재구성하기 위한 몇 가지 추가 정보가 필요하다
 
+* 개발자들은 네트워크가 연결된 머신에서 데이터를 분산하여 분석하는 것이 개별적인 머신에서 수행하는 것보다 더 빠르다는 것을 발견했다
+* 맵리듀스를 이용하면 여러 머신에서 계산을 수행하여 결과를 수집한다 (큐 작업과 비슷하다)
+* 하둡은 머신 간에 데이터를 복사하여 맵과 리듀스 프로그램을 통해 이들을 실행한다
+* 항상 테스트를 더 많이하고 디버깅은 적게 하는 게 좋다
+
 # Advantages of OOP
 * bundle data into packages together with procedures that work on them through work on them through well defined interfaces
 * divide and conquer development 
