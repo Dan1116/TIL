@@ -13,26 +13,65 @@
 * 함수는 불변
 * 파이썬에는 getter나 setter 메서드가 필요 없다
 
-![](Python/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.59.12.png)
+# Strings
+* can slice strings using [start:stop:step]
+* if give two numbers, [start: stop], step = 1 by default
+* you can also omit numbers and leave just colons
 
+# for loops
+* know number of iterations
+* can end early via break
+* uses a counter
+* can rewrite a for loop using a while loop
 
-![](Python/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.44.57.png)
+# while loops
+* unbounded number of iterations
+* can end early via break
+* can use a counter but must initialize before loop and increment it inside loop
+* may not be able to rewrite a while loop using a for loop
 
+# return
+* return only has meaning inside a function
+* only one return executed inside a function
+* code inside function but after return statement not executed
+* has a value associated with it, given to function caller
 
-![](Python/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-13%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%201.56.05.png)
+# print
+* print can be used outside functions
+* can execute many print statements inside a function
+* code inside function can be executed after a print statment
+* has a value associated with it, outputted to the console
 
-
-![](Python/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-13%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.52.25.png)
-
+# Tuples
+* an ordered sequence of elements, can mix element types
+* cannot change element values, immutable
+* represented with parentheses 
 * 튜플의 각 요소는 리스트이다
 
-![](Python/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-13%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.06.33.png)
+# Lists
+* ordered sequence of information, accessible by index
+* a list is denoted by square brackets, []
+* a list contains elements
+* usually homogeneous
+* can contain mixed types
+* list elements can be changed so a list is mutable
+* look up elements by an integer index
+* indices have an order
+* index is an integer
 
+# dict
+* matches keys to values
+* look up one item by another item
+* no order is guaranteed
+* key can be any immutable type
 
-![](Python/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-21%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.36.21.png)
-
-
-![](Python/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-21%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.32.00.png)
+# what is recursion
+* Algoritmically: a way to design solutions to problems by divide and conquer or decrease and conquer 
+* reduce a problem to simpler versions of the same problem
+* semantically: a programming technique where a function calls itself
+* in programming, goal is not have infinite recursion
+* must have 1 or more base cases that are easy to solve
+* must solve the same problem on some other input with the goal of simplifying the larger problem input
 
 # zip()
 * zip() 함수를 사용해서 여러 시퀀스를 병렬로 순회할 수 있다
@@ -302,7 +341,6 @@
 * arange() : 배열 만들기
 * zeros(), ones(), random() : 배열 만들기
 * reshape() : 배열 모양 바꾸기
-* 
 
 # Advantages of OOP
 * bundle data into packages together with procedures that work on them through work on them through well defined interfaces
