@@ -1,4 +1,5 @@
 # Python
+* IDE 를 사용해야 하는 이유는 파이썬 인터프리터를 빠르게 바꿀 수 있기 때문이다
 * Computation 
 * Declarative 
 * Imperative
@@ -464,5 +465,3 @@
 	3. merge sorted sublists
 		* look at first element of each, move smaller to end of the result
 		* when one list empty, just copy rest of other list
-	
-
