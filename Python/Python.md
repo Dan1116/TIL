@@ -1,4 +1,5 @@
 # Python
+* 파이참, vs 코드
 * IDE 를 사용해야 하는 이유는 파이썬 인터프리터를 빠르게 바꿀 수 있기 때문이다
 * Computation 
 * Declarative 
@@ -14,7 +15,7 @@
 * 함수는 불변
 * 파이썬에는 getter나 setter 메서드가 필요 없다
 
-# Strings
+# Strings 
 * can slice strings using [start:stop:step]
 * if give two numbers, [start: stop], step = 1 by default
 * you can also omit numbers and leave just colons
@@ -40,7 +41,7 @@
 # print
 * print can be used outside functions
 * can execute many print statements inside a function
-* code inside function can be executed after a print statment
+* code inside function can be executed after a print statement
 * has a value associated with it, outputted to the console
 
 # Tuples
