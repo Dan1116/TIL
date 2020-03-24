@@ -17,7 +17,7 @@
 
 # Strings 
 * can slice strings using [start:stop:step]
-* if give two numbers, [start: stop], step = 1 by default
+* if you give two numbers, [start: stop], step = 1 by default
 * you can also omit numbers and leave just colons
 
 # for loops
@@ -52,7 +52,7 @@
 
 # Lists
 * ordered sequence of information, accessible by index
-* a list is denoted by square brackets, []
+* a list is denoted(표시되다) by square brackets, []
 * a list contains elements
 * usually homogeneous
 * can contain mixed types
@@ -67,10 +67,10 @@
 * no order is guaranteed
 * key can be any immutable type
 
-# what is recursion
-* Algoritmically: a way to design solutions to problems by divide and conquer or decrease and conquer 
+# what is recursion (재귀)
+* Algorithmically : a way to design solutions to problems by divide and conquer or decrease and conquer 
 * reduce a problem to simpler versions of the same problem
-* semantically: a programming technique where a function calls itself
+* semantically : a programming technique where a function calls itself
 * in programming, goal is not have infinite recursion
 * must have 1 or more base cases that are easy to solve
 * must solve the same problem on some other input with the goal of simplifying the larger problem input
@@ -93,7 +93,7 @@
 * 제너레이터는 한 번만 실행될 수 있다, 리스트, 셋, 문자열 딕셔너리는 메모리에 존재하지만, 제너레이터는 즉석에서 값을 생성하고, 이터레이터를 통해서 한 번에 값을 하나씩 처리한다, 제너레이터는 이 값을 기억하지 않으므로 다시 시작하거나 백업할 수 없다
 
 # 위치 인자
-* 인자의 가장 익숙한 타입은 값을 순서대로 상응하는 매개변수에 복사하는 위치인자이다
+* 인자의 가장 익숙한 타입은 값을 순서대로 상응하는 매개변수에 복사하는 위치 인자이다
 
 # 키워드 인자
 * 위치 인자의 혼동을 피하기 위해 매개변수에 상응하는 이름을 인자에 지정할 수 있다
@@ -103,7 +103,7 @@
 * * 를 사용할 때 가변 인자의 이름으로 args 를 사용할 필요가 없지만 관용적으로 사용한다
 
 # 키워드 인자 모으기 **
-* 키워드 인자를 딕셔너리로 묶기 위해 두 개의 에스터리스크를 사용할 수 있다
+* 키워드 인자를 딕셔너리로 묶기 위해 두 개의 asterisk를 사용할 수 있다
 
 # 클로져
 * 클로져는 다른 함수에 의해 동적으로 생성된다, 바깥 함수로부터 생성된 변수값을 변경하고, 저장할 수 있는 “함수”다
@@ -113,7 +113,7 @@
 * 콜백 함수를 정의할 때 사용하면 유용하다
 
 # 제너레이터
-* 제너레티어는 파이썬의 시퀀스를 생성하는 객체이다
+* 제너레이터는 파이썬의 시퀀스를 생성하는 객체이다
 * 전체 시퀀스를 한 번에 메모리에 생성하고 정렬할 필요 없이 잠재적으로 아주 큰 시퀀스를 순회할 수 있다
 * 일반 함수는 이전 호출에 대한 메모리가 없고, 항상 똑같은 상태로 첫 번째 라인부터 수행하지만 제너레이터는 다르다
 * 잠재적으로 큰 시퀀스를 생성하고, 제너레이터 컴프리핸션에 대한 코드가 아주 긴 경우에는 제너레이터 함수를 사용하면 된다
@@ -175,7 +175,7 @@
 
 # 유니코드
 * 컴퓨터의 기본 저장 단위는 바이트, 8비트에 256개의 고유한 값을 저장할 수 있다
-* 아스키코드는 7비트 (128개의 고유한 값)만 사용한다
+* 아스키코드는 7비트 (128개의 고유한 값) 만 사용한다
 * 아스키코드 : 26개의 대 소문자, 10개의 숫자, 구두 문자, 공백 문자, 비인쇄 제어 코드로 구성되어있다
 * 유니코드는 전 세계 언어의 문자를 정의하기 위한 국제 표준 코드다
 * lookup() : 대 소문자를 구분하지 않는 인자를 취하고, 유니코드 문자를 반환한다
@@ -192,8 +192,8 @@
 # 바이트와 바이트 배열
 * 바이트는 튜플처럼 불변이다
 * 바이트 배열은 리스트처럼 변경 가능하다
-* >는 정수가 빅엔디안 형식으로 저장되었다는 걸 뜻한다
-* <는 정수가 리틀엔디안 형식으로 저장되었다는 걸 뜻한다
+* > 는 정수가 빅엔디안 형식으로 저장되었다는 걸 뜻한다
+* < 는 정수가 리틀엔디안 형식으로 저장되었다는 걸 뜻한다
 * 각각의 L은 4바이트의 부호 없는 긴 정수를 지정한다
 
 # 콘텍스트 매니저
@@ -201,8 +201,8 @@
 * with 표현식 as 변수 형식
 
 # 설정 파일
-* 동적인 것은 프로그램으 인자를 통해 제공하면 되지만, 정적인 것(또는 오래 지속되는 것)은 어딘가에 유지되어야 한다
-* 대부분의 직접 만든 설정 파일은 지저분하고, 그렇게 빠르지 않다, writer 프로그램과 reader 프로그램 모두 관리해야한다
+* 동적인 것은 프로그램의 인자를 통해 제공하면 되지만, 정적인 것(또는 오래 지속되는 것)은 어딘가에 유지되어야 한다
+* 대부분의 직접 만든 설정 파일은 지저분하고, 그렇게 빠르지 않다, writer 프로그램과 reader 프로그램 모두 관리해야하므로 오류가 날 확률이 높다
 
 # 직렬화하기 : pickle
 * 자료구조를 파일로 저장하는 것을 직렬화라고 한다
@@ -221,7 +221,7 @@
 * 테이블을 생성하기 위해서는 테이블의 이름을 짓고, 테이블에 대한 열의 순서와 이름, 타입을 지정해야 한다
 * 비록 열이 누락된 데이터를 허용할 수 있도록 정의할 수는 있지만, 각 행은 같은 열을 가진다
 * 일반적으로 하나의 열 또는 열의 그룹은 테이블의 기본키이다
-* 기본 키 값은 테이블에서 반드시 유일해야지만 동일한 데이터를 추가하는 것을 방지할 수 있다
+* 기본 키 값은 테이블에서 반드시 유일해야하고 동일한 데이터를 추가하는 것을 방지할 수 있다
 * 이 키는 질의를 빠르게 찾을 수 있도록 인덱싱 되어 있다
 * 인덱스는 특정 행을 빨리 찾을 수 있도록 만들어주는 책의 색인처럼 작동한다
 * 파일이 디렉터리 안에 있는 것 처럼, 각 테이블은 상위 데이터베이스 내에 존재한다
@@ -233,14 +233,14 @@
 
 # DB-API
 * API 는 어떤 서비스에 대한 접근을 얻기 위해 호출하는 함수들이 집합이다
-* DB- API 는 관계형 데이터베이스에 접근하기 위한 파이썬의 표준 API이다
+* DB - API 는 관계형 데이터베이스에 접근하기 위한 파이썬의 표준 API이다
 * 관계형 데이터베이스 각각에 대해 별도의 프로그램을 작성하지 않고, 여러 종류의 데이터베이스를 동작하기 위한 하나의 프로그램만 작성하면 된다
 
 # 캐시와 만료
 * 모든 Redis의 키는 TTL (Time To Live) , 만료일을 가진다
 
 # 웹
-* HTTP : 요청과 응답을 교환하기 위한 웹 서버와 클라이언트의 명세 (무상태)
+* HTTP : 요청과 응답을 교환하기 위한 웹 서버와 클라이언트의 명세 (상태가 없다)
 * HTML : 결과에 대한 표현 형식
 * URL : 고유의 해당 서버와 자원을 나타내는 방법
 * HTTP 로 URL을 요청하고 서버로부터 HTML을 받는다
@@ -377,7 +377,7 @@
 
 # An instance and dot notation
 * instantiation creates an instance of an object
-* dot notation used to access attributes though it is better to use getters and setters to access data arrtibutes
+* dot notation used to access attributes though it is better to use getters and setters to access data attributes
 
 # Information hiding
 * If you are accessing data attributes outside the class and class definition change may get errors
