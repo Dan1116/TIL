@@ -1,5 +1,8 @@
 # Python
 * 파이참, vs 코드
+* 튜플
+* 네임스페이스 : 변수에 객체를 할당하면, 변수와 변수에 연결된 딕셔너리형태로 연결되어 네임스페이스 안에 저장된다
+* 클로저 : 일반 함수와 다르게, 자신의 영역 밖에서 호출된 함수의 변수값과 레퍼런스를 복사, 저장, 접근을 가능하게 한다 (다른 함수에 의해 동적으로 생성되고, 바깥 함수로부터 생성된 변수값을 알고 있는 변수이다)
 * IDE 를 사용해야 하는 이유는 파이썬 인터프리터를 빠르게 바꿀 수 있기 때문이다
 * Computation 
 * Declarative 
@@ -48,7 +51,6 @@
 * an ordered sequence of elements, can mix element types
 * cannot change element values, immutable
 * represented with parentheses 
-* 튜플의 각 요소는 리스트이다
 
 # Lists
 * ordered sequence of information, accessible by index
