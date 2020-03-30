@@ -1,4 +1,5 @@
 # Python
+* 프로토콜(어떻게), 트랜스포트(어떤), 프로퍼티 (파이썬의 게터와 세터)
 * 파이참, vs 코드
 * 튜플 (3개 이상의 타입을 사용할 때, 반환값이 3개 이상)
 * 네임스페이스 : 변수에 객체를 할당하면, 변수와 변수에 연결된 딕셔너리형태로 연결되어 네임스페이스 안에 저장된다 (패키지, 이름 충돌을 막기 위해)
@@ -7,6 +8,7 @@
 * A : 65
 * a : 97
 * 0 : 48
+* 파이썬의 문자열은 변경 불가능한 자료형이다
 * IDE 를 사용해야 하는 이유는 파이썬 인터프리터를 빠르게 바꿀 수 있기 때문이다
 * Computation 
 * Declarative 
@@ -21,6 +23,8 @@
 * 파이썬의 함수는 일등 시민 함수, 모든 것이 객체다
 * 함수는 불변
 * 파이썬에는 getter나 setter 메서드가 필요 없다
+* 홑밑줄(_) : 보통 내부적으로 사용하는 변수일 때 사용
+* 곁밑줄(__) : 클래스 외부에서 접근할 수 없도록 내부 변수로 만든다
 
 # Strings 
 * can slice strings using [start:stop:step]
@@ -349,6 +353,10 @@
 * arange() : 배열 만들기
 * zeros(), ones(), random() : 배열 만들기
 * reshape() : 배열 모양 바꾸기
+
+# 로그
+* 진단용 로그 : 진단용 로그는 애플리케이션 작동에 관한 이벤트 기록이다
+* 감시용 로그 : 감시용 로그는 비즈니스 분석에 사용되는 이벤트 기록이다
 
 # Advantages of OOP
 * bundle data into packages together with procedures that work on them through work on them through well defined interfaces
