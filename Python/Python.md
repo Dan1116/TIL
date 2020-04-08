@@ -30,10 +30,10 @@
 * 모든 클래스는 단 하나의 기능을 수행하며, 각 모듈은 비슷한 기능의 클래스를 가진다
 
 # Tablib
-* Tablib - 데코레이터 ( 바로 밑에 있는 함수를 수정 또는 장식한다 )
-* Tablib의 의존성은 벤더화되어 있다 (벤더화란 의존성이 코드와 함께 제공되는 것을 의미한다)
-* Tablib의 의존성은 packages 폴더에 포함되어 있다
-* Tablib은 서드파티 패키지와의 호환성을 위해 이들을 모두 packages 폴더에 담았다
+* Tablib : 데코레이터 ( 바로 밑에 있는 함수를 수정 또는 장식한다 )
+* Tablib 의 의존성은 벤더화되어 있다 (벤더화란 의존성이 코드와 함께 제공되는 것을 의미한다)
+* Tablib 의 의존성은 packages 폴더에 포함되어 있다
+* Tablib 은 서드파티 패키지와의 호환성을 위해 이들을 모두 packages 폴더에 담았다
 
 # Strings 
 * can slice strings using [start:stop:step]
