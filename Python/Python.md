@@ -356,6 +356,11 @@
 * 진단용 로그 : 진단용 로그는 애플리케이션 작동에 관한 이벤트 기록이다
 * 감시용 로그 : 감시용 로그는 비즈니스 분석에 사용되는 이벤트 기록이다
 
+# 코드 동결
+* 코드 동결이란 파이썬을 설치하지 않은 최종 사용자도 애플리케이션을 사용할 수 있도록 독립적으로 실행 가능한 번들을 만드는 것을 의미한다
+* 배포 파일이나 번들은 애플리케이션 코드와 파이썬 인터프리터를 모두 담고 있다
+* 코드를 동결하면 배포 파일의 크기가 2~12MB 가량 증가한다는 단점이있다
+
 # Advantages of OOP
 * bundle data into packages together with procedures that work on them through work on them through well defined interfaces
 * divide and conquer development 
