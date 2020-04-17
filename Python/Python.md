@@ -375,6 +375,10 @@
 * 배포 파일이나 번들은 애플리케이션 코드와 파이썬 인터프리터를 모두 담고 있다
 * 코드를 동결하면 배포 파일의 크기가 2~12MB 가량 증가한다는 단점이있다
 
+# 위젯 라이브러리
+* GUI 개발관점에서 보았을 때, 자주 사용되는 UI제어 및 디스플레이 요소를 통칭하여 위젯이라 말한다
+* 
+
 # Advantages of OOP
 * bundle data into packages together with procedures that work on them through work on them through well defined interfaces
 * divide and conquer development 
