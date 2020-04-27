@@ -451,7 +451,13 @@
 
 # 멀티프로세싱
 * 파이썬 표준 라이브러리의 multiprocessing 모듈은 추가 파이썬 인터프리터를 실행하여 GIL을 우회하는 방법을 제공한다
-* 
+
+# C / C++ / FORTRAN 라이브러리와의 인터페이스
+* CFFI : MIT 라이센스, 파이파이와 호환성이 가장 좋음, 파이썬 바인딩과 함께 공유 C 라이브러리를 빌드하기위해 파이썬에서 C 코드를 작성하고 컴파일할 수 있음
+* ctypes : 파이썬 소프트웨어 재단 라이센스, 파이썬 표준 라이브러리에 포함, 작성하지 않았거나 제어할 수 없던 기존 DLL이나 공유 객체를 래핑할 수 있음, 파이파이와의 호환성이 두번째로 좋음
+* F2PY : BSD 라이센스, 포트란 라이브러리를 사용할 수 있음, F2PY는 NumPy의 일부분이므로 NumPy를 사용해야 함
+* SWIG : GPL, C도 파이썬도 아닌 특수 파일 형식을 사용해, 라이브러리를 여러 언어로 자동 생성하는 방법을 제공
+* Boost.Python : Boost Software, 명령줄 도구가 아니며, C ++ 코드를 포함할 수 있는 C ++ 라이브러리, 파이썬에 노출할 객체를 식별하는 데 사용
 
 # Advantages of OOP
 * bundle data into packages together with procedures that work on them through work on them through well defined interfaces
