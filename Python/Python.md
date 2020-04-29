@@ -50,7 +50,7 @@
 # while loops
 * unbounded number of iterations
 * can end early via break
-* can use a counter but must initialize before loop and increment it inside loop
+* can use a counter but must initialize before loop and increment it inside the loop
 * may not be able to rewrite a while loop using a for loop
 
 # return
@@ -68,7 +68,7 @@
 # Tuples
 * an ordered sequence of elements, can mix element types
 * cannot change element values, immutable
-* represented with parentheses 
+* represented with parentheses  (괄호)
 
 # Lists
 * ordered sequence of information, accessible by index
@@ -466,11 +466,11 @@
 * 역으로 파이썬 딕셔너리 혹은 리스트를 JSON 문자열로 바꿀 수도 있다
 
 # XML 파싱
-* 파이썬 표준 라이브러리에도 XML 파서가 존재하지만, Expat 라이브러리를 사용하여 XML의 구조를 유지하는 요소 크리 객체를 생성하면 더 좋다
-* 트리를 순회하며, 자식 노드에서 콘텐츠를 가져올 수 있다
+* 파이썬 표준 라이브러리에도 XML 파서가 존재하지만, Expat 라이브러리를 사용하여 XML의 구조를 유지하는 트리 객체를 생성하면 더 좋다
+* 트리를 순회하며, 자식 노드에서 컨텐츠를 가져올 수 있다
 
 # 웹 스크래핑
-* 웹 스크래핑은 컴퓨터 프로그램을 사용해 웹 페이지를 탐색하고 필요한 데이터를 가장 유용한 형식에 맞춰 수집하고, 그러한 데이터 구조를 보존하는 작업을 일컫는다 
+* 웹 스크래핑은 컴퓨터 프로그램을 사용해 웹 페이지를 탐색하고 필요한 데이터를 가장 유용한 형식에 맞춰 수집하고, 그러한 데이터 구조를 보존하는 작업을 말한다
 
 # 데이터 직렬화
 * 데이터 직렬화란 구조화된 데이터를 공유하거나 저장할 수 있는 형식으로 변환하는 개념이며, 데이터 객체를 재구축하는 데 필요한 정보를 전송의 수신단(혹은 저장 장치) 메모리에 보존한다
@@ -483,6 +483,27 @@
 # RabbitMQ
 * 오픈 소스 메시지 브로커 스프트웨어이다
 * 메시지 브로커는 중간 프로그램으로 프로토콜에 따라 발신자로부터 메시지를 전달 받아 수신자에게 전송한다
+
+# 데이터
+* IPython : 아파치 라이센스, 강하된 기능의 파이썬 인터프리터로, 입력 히스토리, 통합 디버거 뿐만 아니라 그래픽과 플롯을 터미널 안에서 모두 확인이 가능하다
+* Numpy : BSD 라이센스, 2차원 이상의 배열과 선형대수 도구를 제공, 속도에 최적화
+* SciPy : BSD 라이센스, 선형대수, 신호처리, 적분, 해 찾기, 통계 분포 등 공학과 과학에 관한 함수와 기능을 제공
+* Matplotlib : BSD 라이센스, 공학 과학에서 주로 사용되는 그래프를 제공
+* Pandas : BSD 라이센스, series와 DataFrame 객체를 제공하며, 데이터 정렬, 통합 그룹화, 집계, 인덱싱, 윈도우, 부분집합과 같은 작업이 가능
+* Scikit- Learn : BSD 라이센스, 차원 축소, 분류, 예측 , 군집화, 모델 선택, 결측치 대치, 전처리와 같은 다양한 기계학습 알고리즘 제공
+* Rpy2 : GPLv2 라이센스, 파이썬에서 R 함수를 실행하고 파이썬-R 환경 간 데이터 교환이 가능한 인터페이스 제공
+* SymPy : BSD 라이센스, 완전한 컴퓨터 대수학 시스템을 지향하며 수열 확장, 극한 미적분과 같은 기호 수학을 지원
+* nltk : 아파치 라이센스, 여러 가지 언어의 학습 데이터를 포함한 자연어 처리 종합 툴킷을 제공
+* pillow / PIL :PIL 라이센스, 수많은 파일 양식뿐만 아니라 간단한 이미지 필터링 등의 프로세싱을 지원
+* cv2 : 아파치 라이센스, 비디오 실시간 분석에 적합한 컴퓨터 비전 루틴을 제공하며, 사람 및 얼굴 인식 알고리즘이 심어져 있다
+* Scikit-Image : BSD 라이센스, 필터링, 조정, 색사 분리, 엣지, 얼룩, 모서리 감지, 분할 등의 이미지 처리 루틴을 제공
+
+# 분산 문서 저장소
+* MongoDB : 고유의 필터와 쿼리 언어가 있는, 클러스터에 서식하는 거대한 파이썬 딕셔너리
+* 카산드라 : 빠른 검색을 제공하며 열의 개수가 많아져도 무리가 없다
+* HBase : 데이터가 행 ID, 열 이름, 값 과 같이 저장되므로 웹을 구성하는 웹사이트간 네트워크 데이터와 같은 희소 배열 형태의 데이터에 적합하다
+* 드루이드 : 이벤트 데이터를 수집하는 데 사용할 수 있다, 열에 순서를 매기고 정렬할 수 있으며, 빠른 I / O 를 가능하게 하고 작은 풋프린트를 가지도록 스토리지를 압축할 수 있다
+* 레디스 : 분산 인메모리 키 - 값 저장소이다, 디스크 I / O 가 없어 대기 시간이 줄어드는 게 핵심이다  
 
 # Advantages of OOP
 * bundle data into packages together with procedures that work on them through work on them through well defined interfaces
